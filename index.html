@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+
+   
+</head>
+<body>
+    
+    
+<div class="maincontainer">
+   
+
+    <input placeholder="0" class="getting" type="text">
+    <div class="container"><button onclick="
+    valueHandle('1');
+    ">1</button>
+    <button onclick="
+    valueHandle('2');
+    ">2</button>
+    <button onclick="
+    valueHandle('3');
+    ">3</button>
+    <button onclick="
+    calculation = '' ;
+    display(); 
+    ">AC</button>
+        <button onclick="
+        valueHandle('4');
+        ">4</button>
+        <button onclick="
+        valueHandle('5');
+        ">5</button>
+        <button onclick="
+        valueHandle('6');
+        ">6</button>
+        <button  onclick="
+        operatorHandle('+ ', ' + ')
+        
+        " >+</button>
+                <button onclick="
+                valueHandle('7');
+                ">7</button>
+                <button onclick="
+                valueHandle('8');
+                ">8</button>
+                <button onclick="
+                valueHandle('9');
+                ">9</button>
+                <button  onclick="
+                operatorHandle('- ', ' - ')
+                
+                " >-</button>
+
+                    <button onclick="
+                    valueHandle('&#40;');
+                    ">&#40;</button>
+                    <button onclick="
+                    valueHandle('&#41;');
+                    ">&#41;</button>
+                    <button  onclick="
+                    operatorHandle('/ ', ' / ')
+                    
+                    " >/</button>
+                     <button  onclick="
+                     operatorHandle('* ', ' * ')
+                     
+                     " >&#215;</button>
+                      
+             
+    
+                            <button  onclick="
+                            valueHandle('%');
+                            ">%</button>
+                            <button class="btn1" onclick="
+                            calculation = eval(calculation);
+                            calculation= calculation.toString();
+                            display();
+                            ">=</button>
+    </div>
+    
+   
+   
+   
+
+
+
+</div>
+
+    
+  <script src="vanila.js"></script>
+</body>
+</html>
